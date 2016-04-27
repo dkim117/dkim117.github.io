@@ -30,6 +30,7 @@
     <![endif]-->
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/clock.css">
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
@@ -115,7 +116,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/clock.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -301,19 +302,36 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title 1</h2>
+                            <h2>Clock</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Description 1</p>
+                            <body onload='startUp()'>
+                                <div class='clockBKG'>
+                                    <div class="img-centered" id='clockWrapper'>
+                                        <div class='nums' id='n1'> - </div>
+                                        <div class='nums' id='n2'> - </div>
+                                        <div class='nums' id='n3'> = </div>
+                                        <div class='nums' id='n4'> - </div>
+                                        <div class='nums' id='n5'> - </div>
+                                        <div class='nums' id='n6'> = </div>
+                                        <div class='nums' id='n7'> - </div>
+                                        <div class='nums' id='n8'> - </div>
+                                        <div class='nums' id='n9'> = </div>
+                                        <div class='nums' id='n10'> - </div>
+                                        <div class='nums' id='n11'> - </div>
+                                        <div class='nums' id='n12'> = </div>
+                                        <div class='needle' id='hour'></span> <span> </div>
+                                        <div  class='needle' id='min'><span> </span> </div>
+                                        <div  class='needle' id='secs'><span> </span></div>
+                                    </div>
+                                </div>
+                            <p></p>
+                            <p>A clock that indicates the current time. Toggles between light and dark during day and nighttime.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                </li>
-                                <li>Date:
-                                </li>
-                                <li>Service:
+                                <li>
+                                    <strong><a href="https://github.com/dkim117/clock">Github Link</a>
+                                    </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -415,6 +433,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
